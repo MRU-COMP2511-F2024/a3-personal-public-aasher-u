@@ -1,0 +1,63 @@
+/* Styles specific to the home page */
+.home-image {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    float: right; 
+    margin: 0 1.5rem 1rem 0; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h1 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.intro-text p {
+    margin-bottom: 1rem;
+}
+
+/* Audio and transcript styles */
+.introduction {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.transcript {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transcript summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Contact information */
+.contact-info {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
