@@ -1,4 +1,4 @@
-/* Styles specific to the projects page */
+/* Styles specific to the education page */
 
 .container {
     max-width: 1200px;
@@ -14,47 +14,52 @@ h1 {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
-.project-card {
+.education-item {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1;
- 
 }
 
-.project-card:hover {
+.education-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.project-card h2 {
-    margin-bottom: 1rem;
+.education-item h2 {
+    margin-bottom: 0.5rem;
     color: #007bff;
     font-size: 1.5rem;
 }
 
-.project-card p {
+.education-item .school {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.education-item .date {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.education-item p {
+    font-size: 1rem;
     color: #666;
     line-height: 1.6;
 }
 
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-image:hover {
-    transform: scale(1.05);
+.education-item ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #666;
 }
 
 footer {
@@ -62,17 +67,17 @@ footer {
     padding: 1rem;
     background-color: #f4f4f9;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+    margin-top: auto;
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .content {
         grid-template-columns: 1fr; /* Single column layout */
-        gap: 1rem; 
+        gap: 1rem; /* Reduce gap size */
     }
-    .project-card {
-        padding: 1rem; 
+    .education-item {
+        padding: 1rem; /* Adjust padding */
     }
 }
 
@@ -80,7 +85,10 @@ footer {
     h1 {
         font-size: 1.2rem; /* Adjust heading font size */
     }
-    .project-card p {
+    .education-item h2 {
+        font-size: 1.2rem; /* Adjust heading font size */
+    }
+    .education-item p {
         font-size: 0.9rem; /* Adjust paragraph font size */
     }
 }

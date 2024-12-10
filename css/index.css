@@ -37,13 +37,13 @@ body {
     color: #007bff;
 }
 
-.nav-links {
+ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
 
-.nav-links a {
+ul a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -51,8 +51,8 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+ul a:hover,
+ul a.active {
     color: #007bff;
 }
 
@@ -65,15 +65,81 @@ footer {
     margin-top: auto;
 }
 
+/* Hide the checkbox and style the label as the hamburger menu */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Show the hamburger menu icon on small screens */
+@media screen and (max-width: 590px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        gap: 10px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    
+    /* Show the menu when checkbox is checked 
+    Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/:checked */
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between menu items */
+    }
+
+    
+}
 /* Responsive design */
 @media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    ul {
+        position: static;
+        width: auto;
+        box-shadow: none;
     }
 
     .navbar {
         flex-direction: column;
+        align-items: flex-start;
     }
 }
+
+@media (max-width: 480px) {
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+
+    ul a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+
+}
+

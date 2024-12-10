@@ -1,4 +1,4 @@
-/* Styles specific to the projects page */
+/* Styles specific to the skills page */
 
 .container {
     max-width: 1200px;
@@ -14,47 +14,43 @@ h1 {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     gap: 2rem;
 }
 
-.project-card {
+.skill-category {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1;
- 
 }
 
-.project-card:hover {
+.skill-category:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.project-card h2 {
+.skill-category h2 {
     margin-bottom: 1rem;
     color: #007bff;
     font-size: 1.5rem;
+    text-align: center;
 }
 
-.project-card p {
-    color: #666;
-    line-height: 1.6;
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    gap:0.5rem;
 }
 
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-image:hover {
-    transform: scale(1.05);
+.skill-category ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: left; 
 }
 
 footer {
@@ -62,17 +58,17 @@ footer {
     padding: 1rem;
     background-color: #f4f4f9;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+    margin-top: auto;
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .content {
         grid-template-columns: 1fr; /* Single column layout */
-        gap: 1rem; 
+        gap: 1rem; /* Reduce gap size */
     }
-    .project-card {
-        padding: 1rem; 
+    .skill-category {
+        padding: 1rem; /* Adjust padding */
     }
 }
 
@@ -80,7 +76,7 @@ footer {
     h1 {
         font-size: 1.2rem; /* Adjust heading font size */
     }
-    .project-card p {
-        font-size: 0.9rem; /* Adjust paragraph font size */
+    .skill-category ul li {
+        font-size: 0.9rem; /* Adjust list item font size */
     }
 }

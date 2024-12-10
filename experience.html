@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/experience.css">
     <title>Experience - Aasher Uddin</title>
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">
-            Aasher Uddin
-        </div>
-        <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
+        <input type="checkbox" id="menu-toggle"> <!-- Reference for this: https://developer.mozilla.org/en-US/docs/Web/CSS/:checked  -->
+            <label for="menu-toggle" class="menu-icon">☰ Menu</label>
+       
+        <ul>
+            <li><a href="home.html" >Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="experience.html" class="active">Experience</a></li>
@@ -20,17 +21,37 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <!--Used ChatGPT for the description portion-->
 
     <main class="container">
         <h1>Experience</h1>
-        <div class="content">
-            <div class="experience-item">
-                <h2>Job Title</h2>
-                <p class="company">Nike</p>
-                <p class="date">May 2023 - Present</p>
-                <p>Description</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2023 - Present</div>
+                <div class="timeline-content">
+                    <h2>Back of House Athlete</h2>
+                    <h3>Nike</h3>
+                    <p>Responsible for inventory management, ensuring stock levels are accurate, and assisting with logistical operations to support sales staff.</p>
+                </div>
             </div>
-           
+
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - 2023</div>
+                <div class="timeline-content">
+                    <h2>Sales Associate</h2>
+                    <h3>Vans</h3>
+                    <p>Provided support in retail operations, assisted customers with product inquiries, and helped optimize store layout for better accessibility.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2021 - 2022</div>
+                <div class="timeline-content">
+                    <h2>ISCC</h2>
+                    <h3>Volunteer</h3>
+                    <p>Assisted in organizing community events, maintaining cleanliness within the mosque, and providing support for religious programs and educational activities.</p>
+                </div>
+            </div>
         </div>
     </main>
 
