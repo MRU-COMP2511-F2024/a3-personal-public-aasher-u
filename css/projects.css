@@ -1,10 +1,43 @@
 /* Styles specific to the projects page */
 
+
 .container {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    padding: 0.3rem 0.5rem; /* Minimal padding for a compact look */
+    height: auto; /* Ensure it doesn't have fixed height issues */
+}
+
+
+
+ul a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+ul a:hover,
+ul a.active {
+    color: #007bff;
+}
+
 
 h1 {
     text-align: center;
@@ -18,7 +51,7 @@ h1 {
     gap: 2rem;
 }
 
-.project-card {
+/* .project-card {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
@@ -55,6 +88,19 @@ h1 {
 
 .project-image:hover {
     transform: scale(1.05);
+} */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff; /* Change this to your desired color */
+    border-radius: 50%; /* Optional: make it circular */
+    width: 30px; /* Adjust size */
+    height: 30px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
 }
 
 footer {
@@ -62,7 +108,7 @@ footer {
     padding: 1rem;
     background-color: #f4f4f9;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+    margin-top: auto;
 }
 
 /* Responsive adjustments */

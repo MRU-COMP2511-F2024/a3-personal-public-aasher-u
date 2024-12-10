@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/projects.css">  
+    
+    
     <title>Projects - Aasher Uddin</title>
 </head>
 <body>
     <nav class="navbar">
-        <input type="checkbox" id="menu-toggle"> <!-- Reference for this: https://developer.mozilla.org/en-US/docs/Web/CSS/:checked  -->
-            <label for="menu-toggle" class="menu-icon">☰ Menu</label>
-       
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰ Menu</label>
         <ul>
-            <li><a href="home.html" >Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="experience.html">Experience</a></li>
@@ -22,38 +25,141 @@
         </ul>
     </nav>
 
-    <main class="container">
+    <main class="container mt-4">
         <h1>Projects</h1>
-        <div class="content">
-            <div class="project-card">
-                <img src="images/stock.png" alt="Stock Predictor" class="project-image">
-                <h2>Stock Predictor</h2>
-                <p>An advanced stock prediction model using machine learning algorithms to forecast stock trends with accuracy.</p>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div id="carouselStockPredictor" class="carousel slide" >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/stock.png" class="d-block w-100" alt="Stock Predictor Screenshot">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/stock2.png" class="d-block w-100" alt="Stock Predictor code snippet">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStockPredictor" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselStockPredictor" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Stock Predictor</h5>
+                        <p class="card-text">An advanced stock prediction model using machine learning algorithms to forecast stock trends with accuracy. After watching a video from 'Michael Reeves' where his fish predicts the stock to invest in, I wanted to try building a machine learning project myself. 
+                            Although, it was not easy to learn, the coding part was surprisingly short for me.
+                            This project is still a work in progress, since i want to add more features (e.g. price trends, trading volumes, and real-time prediction)
+                            The first image shows the stock price predicted for Apple.</p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="project-card">
-                <img src="images/portfolio1.png" alt="Personal Portfolio v2" class="project-image">
-                <h2>Personal Portfolio v2</h2>
-                <p>A responsive portfolio website showcasing skills, projects, and achievements with clean design and functionality. (Your on it right now!)</p>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div id="carouselPortfolioV2" class="carousel slide" >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/portfolio1.png" class="d-block w-100" alt="Portfolio v2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/portfolio1-2.png" class="d-block w-100" alt="Portfolio v2 code snippet">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolioV2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolioV2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Portfolio v2</h5>
+                        <p class="card-text">A responsive portfolio website showcasing skills, projects, and achievements with clean design and functionality. 
+                            One challenge I faced building this website was the audio integration part.
+                            As this was the first time I ever had to use a audio file in any of the websites I have built.
+                            It was interesting to know that you can use CSS to change the style of the audio player, since I thought it was a default for Chrome.
+                        </p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="project-card">
-                <img src="images/portfolio2.png" alt="Personal Portfolio v1" class="project-image">
-                <h2>Personal Portfolio v1</h2>
-                <p>A portfolio that showcases my skills, projects and experience .</p>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div id="carouselPortfolioV1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/portfolio2.png" class="d-block w-100" alt="Portfolio v1 Screenshot ">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/portfolio2-2.png" class="d-block w-100" alt="Portfolio v1 code snippet">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolioV1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolioV1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Portfolio v1</h5>
+                        <p class="card-text">A portfolio showcasing my skills, projects, and experiences. This project is yet to be finished, as I feel it is quite empty still.
+                            Building this website taught me alot about React and how it can be used without HTML.
+                            One of the more difficult part of this website was building the typewriter animation, as I used a library called "GSAP."
+                            Trying to figure out the timing with each letter made it harder, but eventually with some trial and error I got it to work with any sentence (one of my proudest moments).
+                            This website has its own domain, where I used AWS to deploy it.
+                            
+                        </p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="project-card">
-                <img src="images/techweave.png" alt="TechWave" class="project-image">
-                <h2>TechWave</h2>
-                <p>A website for a company that does web development and e-commerce.</p>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div id="carouselTechWave" class="carousel slide" >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/techweave.png" class="d-block w-100" alt="TechWave Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/techweave2.png" class="d-block w-100" alt="TechWave code snippet">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTechWave" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTechWave" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TechWave</h5>
+                        <p class="card-text">A website for a company specializing in web development and e-commerce solutions. This was a duo project, with Jan Pizarras.
+                            One of the most challenging parts of this project was making sure it was accessible.
+                            For the first version of the project we had to make a table about our services, but it was not as clean of a design we were hoping. 
+                            The service page was disproportionate and too long for what we liked, so adding a 'Scroll to Top' button really helped. 
+                            For the second version, we decided to go for a grid layout (sort of what I have on this page), which gave it a nice clean look.
+                        </p>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </main>
 
-    <footer>
-        <p>© 2024 Aasher Uddin</p>
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Aasher Uddin</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
